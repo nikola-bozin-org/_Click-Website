@@ -4,23 +4,45 @@
     position: absolute;
     z-index: 2;
 }
-
 .topbarWrapper {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 2fr 4fr 2fr;
-    gap: 40px;
+    grid-template-columns: 2fr 6fr 2fr;
 }
-
 .topbarWrapperLeft{
-    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: rgb(73, 73, 73);
+}
+.socialIconLink{
+    height: 50px;
+    width: 50px;
+    transition: 0.1s ease-out;
+}
+.socialIconLink:hover{
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+}
+.socialIcon{
+    height:100%;
+    width: 100%;
 }
 
 .topbarWrapperCenter{
     background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .topbarWrapperRight{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
     background-color: green;
 }
