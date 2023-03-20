@@ -2,8 +2,10 @@
     height: 7vh;
     width: 100vw;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
+    top: 0;
 }
+
 .topbarWrapper {
     width: 100%;
     height: 100%;
@@ -15,11 +17,11 @@
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    background-color: rgb(73, 73, 73);
+    margin-left: 10px;
 }
 .socialIconLink{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     transition: 0.1s ease-out;
 }
 .socialIconLink:hover{
@@ -32,17 +34,67 @@
 }
 
 .topbarWrapperCenter{
-    background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.brandIconLink{
+    margin-left: 10px;
+    height: 40%;
+    object-fit: cover;
+    transition: 0.1s ease-out;
+}
+.brandIconLink:hover{
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+}
+.brandIcon{
+    height:100%;
+    width: 100%;
+}
+.customBrandIcon{
+    height: 70%;
+    margin-top: 5px;
+}
+
+.topbarWrapperRight{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.topbarWrapperRight{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
-    background-color: green;
+.sideMenuImage{
+    width: 35px;
+    height: 35px;
+    transition: 0.3s ease;
+}
+
+.sideMenuImage:hover{
+    scale: 1.3;
+    transition: 0.3s ease;
+}
+
+
+@media (max-width:715px){
+    .topbarWrapperCenter{
+        gap: 5px;
+    }
+    .socialIconLink{
+        width: 30px;
+        height: 30px;
+    }
+    .sideMenuImage{
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width:630px){
+    .topbar{
+        display: none;
+    }
 }

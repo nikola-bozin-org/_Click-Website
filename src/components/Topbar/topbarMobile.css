@@ -1,0 +1,18 @@
+.topbarMobile {
+    height: 7vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    display: none;
+    color: white;
+    text-align: center;
+    font-size: 27px;
+}
+
+
+@media (max-width:630px){
+    .topbarMobile{
+        display: block;
+    }
+}
