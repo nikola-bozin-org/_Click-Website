@@ -14,26 +14,34 @@ const MainClickImages = () => {
   const images = [
     click1, click2, click3, click4, click5
   ]
-  const [currentClassName,setCurrentClassName] = useState("defaultMainImageScaled")
+  const [currentClassName, setCurrentClassName] = useState("defaultMainImage")
+
+  useEffect(() => {
+    const initialTimeout = setTimeout(() => {
+      setCurrentClassName('defaultMainImageScaled');
+    }, 100);
+
+    return () => clearTimeout(initialTimeout);
+  }, []);
   
-    useEffect(() => {
-        const timeout1 = setTimeout(() => {
-          setCurrentClassName("defaultMainImageScaled")
-          setCurrentImage((currentImage + 1) % images.length);
-        }, 5000);
+  useEffect(() => {
+    const timeout1 = setTimeout(() => {
+      setCurrentClassName("defaultMainImageScaled")
+      setCurrentImage((currentImage + 1) % images.length);
+    }, 5000);
 
-        const timeout2 = setTimeout(() => {
-          setCurrentClassName("defaultMainImage")
-        }, 4700);
+    const timeout2 = setTimeout(() => {
+      setCurrentClassName("defaultMainImage")
+    }, 4700);
 
-        return () =>{ clearTimeout(timeout1); clearTimeout(timeout2) };
-      }, [currentImage]);
+    return () => { clearTimeout(timeout1); clearTimeout(timeout2) };
+  }, [currentImage]);
 
-      return (
-        <div className="mainImages">
-          <img src={images[currentImage]} alt="" className={`${currentClassName}`} onTransitionEnd={()=>setCurrentClassName("defaultMainImage")}/>
-        </div>
-      );
+  return (
+    <div className="mainImages">
+      <img src={images[currentImage]} alt="" className={`${currentClassName}`} />
+    </div>
+  );
 }
 
 export default MainClickImages
