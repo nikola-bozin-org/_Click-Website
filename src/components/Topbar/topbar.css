@@ -78,7 +78,16 @@
     transition: 0.3s ease;
 }
 
-
+@media (max-width:1080px){
+    .socialIcon{
+        width: 32px;
+        height: 32px;
+    }
+    .sideMenuImage{
+        width: 30px;
+        height: 30px;
+    }
+}
 @media (max-width:715px){
     .topbarWrapperCenter{
         gap: 5px;

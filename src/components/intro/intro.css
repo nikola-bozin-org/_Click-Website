@@ -41,17 +41,35 @@
     height: 100%;
 }
 
-
+@media (max-width:930px){
+    .click{
+        font-size: 77px;
+    }
+    .ultimativni{
+        font-size: 45px;
+    }
+}
 @media (max-width:650px){
     .click{
         font-size: 68px;
         margin-top: 20px;
     }
     .ultimativni{
+        width: 70%;
         font-size: 40px;
     }
 }
+@media (max-width:850px){
+    .ultimativni{
+        font-size: 35px;
+    }
+}
 
+@media (max-width:530px){
+    .ultimativni{
+        font-size: 31px;
+    }
+}
 @media (max-width:460px){
     .click{
         font-size: 50px;
@@ -60,10 +78,12 @@
         font-size: 30px;
     }
 }
-
-@media (max-width:340px){
+@media (max-width:360px){
     .click{
         font-size: 40px;
         margin-top: 40px;
+    }
+    .ultimativni{
+        width: 42%;
     }
 }
