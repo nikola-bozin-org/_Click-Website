@@ -7,6 +7,9 @@ import logitech from '../../images/brands/logitech.png'
 import nzxt from '../../images/brands/nzxt.png'
 import steelseries from '../../images/brands/steelseries.png'
 import menuIcon from '../../images/other/menu.png'
+import SocialIconLink from '../social-icon-link/SocialIconLink'
+import BrandIconLink from '../brand-icon-link/BrandIconLink'
+
 
 const Topbar = () => {
   return (
@@ -17,10 +20,10 @@ const Topbar = () => {
                  link={"https://www.instagram.com/click.e.sport/"}
                  image={instagram}
                 />
-                <SocialIconLink
+                {/* <SocialIconLink
                  link={"https://www.instagram.com/click.e.sport/"}
                  image={facebook}
-                />
+                /> */}
             </div>
             <div data-aos='fade-down' className="topbarWrapperCenter">
                 <BrandIconLink
@@ -49,22 +52,5 @@ const Topbar = () => {
     </div>
   )
 }
-
-const SocialIconLink = ({link,image}) =>{
-    return (
-        <a href={link} target='_blank' className="socialIconLink">
-        <img src={image} alt="" className="socialIcon" />
-    </a>
-    )
-}
-const BrandIconLink =({link,image,customClassName})=>{
-    return (
-        <a href={link} target='_blank' className="brandIconLink">
-        <img src={image} alt="" className={`brandIcon ${customClassName}`} />
-    </a>
-    )
-}
-
-
 
 export default Topbar

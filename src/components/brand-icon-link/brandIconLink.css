@@ -1,0 +1,25 @@
+.brandIconLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width:690px){
+    .brandIconLink{
+        height: 65%;
+    }
+}
+
+@media (max-width:560px){
+    .customBrandIcon{
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:360px){
+    .brandIconLink{
+        height: 55%;
+    }
+
+}

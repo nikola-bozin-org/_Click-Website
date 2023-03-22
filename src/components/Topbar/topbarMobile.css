@@ -1,5 +1,4 @@
 .topbarMobile {
-    height: 7vh;
     width: 100%;
     position: absolute;
     z-index: 2;
@@ -9,10 +8,53 @@
     text-align: center;
     font-size: 27px;
 }
+.topbarMobileBrands{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    gap:13px;
+}
+.topbarMobileIcons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topbarMobileIconsSocial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    margin-left: 10px;
+}
+.sideMenuImageMobile{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
 
 
-@media (max-width:630px){
+@media (max-width:690px){
     .topbarMobile{
-        display: block;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .sideMenuImageMobile{
+        width: 23px;
+        height: 23px;
     }
 }
+
+
+@media (max-width:410px){
+    .sideMenuImageMobile{
+        width: 20px;
+        height: 20px;
+    }
+    .topbarMobileBrands{
+        gap: 0px;
+    }
+    .topbarMobileIconsSocial{
+        gap:0px;
+    }
+}
+

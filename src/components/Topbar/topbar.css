@@ -19,19 +19,7 @@
     gap: 10px;
     margin-left: 10px;
 }
-.socialIconLink{
-    height: 40px;
-    width: 40px;
-    transition: 0.1s ease-out;
-}
-.socialIconLink:hover{
-    transform: scale(1.1);
-    transition: 0.1s ease-in;
-}
-.socialIcon{
-    height:100%;
-    width: 100%;
-}
+
 
 .topbarWrapperCenter{
     display: flex;
@@ -57,7 +45,6 @@
 }
 .customBrandIcon{
     height: 70%;
-    margin-top: 5px;
 }
 
 .topbarWrapperRight{
@@ -81,30 +68,26 @@
 }
 
 @media (max-width:1080px){
-    .socialIcon{
-        width: 32px;
-        height: 32px;
-    }
     .sideMenuImage{
         width: 30px;
         height: 30px;
+    }
+}
+@media (max-width:800px){
+    .topbarWrapperCenter{
+        gap:8px;
     }
 }
 @media (max-width:715px){
     .topbarWrapperCenter{
         gap: 5px;
     }
-    .socialIconLink{
-        width: 30px;
-        height: 30px;
-    }
     .sideMenuImage{
         width: 28px;
         height: 28px;
     }
 }
-
-@media (max-width:630px){
+@media (max-width:690px){
     .topbar{
         display: none;
     }

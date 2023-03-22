@@ -1,0 +1,43 @@
+.socialIconLink{
+    height: 40px;
+    width: 40px;
+    transition: 0.1s ease-out;
+}
+.socialIconLink:hover{
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+}
+.socialIcon{
+    height:100%;
+    width: 100%;
+    margin-top: 3px;
+}
+
+@media (max-width:1080px){
+    .socialIcon{
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width:715px){
+    .socialIconLink{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width:690px){
+    .socialIcon{
+        margin: 0;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width:410px){
+    .socialIcon{
+        width: 20px;
+        height: 20px;
+    }
+}
