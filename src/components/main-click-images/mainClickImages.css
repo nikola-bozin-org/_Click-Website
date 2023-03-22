@@ -2,9 +2,8 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
-    max-width: 100%;
   }
   .defaultMainImage {
     position: absolute;

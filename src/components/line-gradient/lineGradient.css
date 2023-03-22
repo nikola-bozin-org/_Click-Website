@@ -1,0 +1,6 @@
+.lineGradient{
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, black 2%, yellow 50%,black 98%);
+    overflow: hidden;
+}

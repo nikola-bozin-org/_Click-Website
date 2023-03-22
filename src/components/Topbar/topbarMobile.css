@@ -1,6 +1,6 @@
 .topbarMobile {
     height: 7vh;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     z-index: 2;
     top: 0;
