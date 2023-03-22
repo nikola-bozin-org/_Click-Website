@@ -1,5 +1,88 @@
 .rightSection{
     height: 100vh;
     width: 100%;
-    background-color: red;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.rightSectionBackgroundImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -2;
+}
+
+.rightSectionBackground{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 40% 0, 72% 100%, 0% 100%);
+    background-color: black;
+    z-index: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.rightSectionBackgroundTexts{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    font-size: 28px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.rightSectionBackgroundTitle{
+    font-size: 1.3em;
+}
+
+@media (max-width:1024px){
+    .rightSectionBackgroundTexts{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:768px){
+    .rightSectionBackgroundTexts{
+        font-size: 22px;
+        margin-left: 50px;
+
+    }
+}
+
+@media (max-width:660px){
+    .rightSection{
+        flex-direction: column;
+        height: auto;
+    }
+    .rightSectionBackground{
+        position: relative;
+        clip-path: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .rightSectionBackgroundImage{
+        position: relative;
+    }
+    .rightSectionBackgroundTexts{
+        width: 90%;
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}   
+
+@media (max-width:660px){
+    .rightSectionBackgroundTexts{
+        font-size: 19px;
+    }
 }
