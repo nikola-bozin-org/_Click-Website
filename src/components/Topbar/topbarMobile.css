@@ -1,7 +1,7 @@
 .topbarMobile {
     width: 100%;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     display: none;
     color: white;
