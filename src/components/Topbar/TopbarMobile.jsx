@@ -12,7 +12,7 @@ import SocialIconLink from '../social-icon-link/SocialIconLink'
 
 const TopbarMobile = () => {
   return (
-    <div className='topbarMobile'>
+    <div data-aos='fade-down' className='topbarMobile'>
       <div className="topbarMobileBrands">
         <BrandIconLink
         image={eshark}
