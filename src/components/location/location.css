@@ -1,0 +1,62 @@
+.location {
+    height: 100%;
+}
+
+.slikaLokacije {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    filter: brightness(90%);
+    transition: 0.2s ease;
+    position: absolute;
+}
+
+.location:hover .slikaLokacije {
+    filter: brightness(50%);
+    transition: 0.2s ease;
+}
+
+.opisLokacije {
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.opisLokacije{
+    opacity: 100%;
+}
+
+@media (max-width:2560px){
+    .location{
+        width: 70vw;
+    }
+    
+}
+
+@media (max-width:768px){
+    .location{
+        width: 70vw;
+        height: 80%;
+    }
+}
+@media (max-width:425px){
+    .location{
+        width: 70vw;
+        height: 80%;
+    }
+    .grad{
+        font-size: 20px;
+    }
+    .ulica{
+        font-size: 20px;
+    }
+    .dodatanInfo{
+        font-size: 20px;
+    }
+}
