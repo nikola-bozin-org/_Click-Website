@@ -29,9 +29,14 @@
 
 @media (max-width:690px){
     .socialIcon{
-        margin: 0;
+        margin-left: 15px;
         width: 25px;
         height: 25px;
+    }
+}
+@media (max-width:515px){
+    .socialIcon{
+        margin-left: 10px;
     }
 }
 
