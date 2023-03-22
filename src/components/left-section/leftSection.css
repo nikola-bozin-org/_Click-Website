@@ -2,4 +2,47 @@
     height: 100vh;
     width: 100%;
     background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.leftSectionBackgroundImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -2;
+}
+
+.leftSectionBackground{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(59% 0, 100% 0, 100% 100%, 30% 100%);
+    background-color: black;
+    z-index: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.leftSectionBackgroundTexts{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    font-size: 50px;
+    text-align: center;
+    margin-right: 100px;
+}
+
+
+.leftSectionBackgroundTitle{
+    font-size: 1.3em;
 }

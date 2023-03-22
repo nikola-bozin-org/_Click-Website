@@ -9,6 +9,8 @@ import LineGradient from '../components/line-gradient/LineGradient'
 import LeftSection from '../components/left-section/LeftSection'
 import RightSection from '../components/right-section/RightSection'
 
+import click3 from '../images/click/click3.png'
+
 const Homepage = () => {
 
   return (
@@ -18,12 +20,17 @@ const Homepage = () => {
         <Topbar />
         <TopbarMobile/>
         <Intro/>
-        {/* <Information/> */}
-        {/* <LineGradient/> */}
-        <LeftSection/>
-        {/* <LineGradient/> */}
-        <RightSection/>
-        {/* <LineGradient/> */}
+        <Information/>
+        <LineGradient/>
+        <LeftSection image={click3} title={"Cekamo te"}
+         text={`da ostvaris svoje najbolje gejming trenutke!
+                Otvoreni smo svakog dana od 10:00 do 03:00. 
+                Sve te ceka spremno!
+                Vezuj se, dzojstik u ruke i polecemo!`
+                }/>
+        <LineGradient/>
+        {/* <RightSection/>
+        <LineGradient/> */}
         <SiteInDevelopment/>
     </div>
     </>
