@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './topbarMobile.css'
 import BrandIconLink from '../brand-icon-link/BrandIconLink'
 import instagram from '../../images/social/instagram.png'
@@ -9,8 +9,15 @@ import nzxt from '../../images/brands/nzxt.png'
 import steelseries from '../../images/brands/steelseries.png'
 import menuIcon from '../../images/other/menu.png'
 import SocialIconLink from '../social-icon-link/SocialIconLink'
+import { SidebarContext } from '../../contexts/sideBarContext'
 
 const TopbarMobile = () => {
+  const sidebarContext = useContext(SidebarContext);
+
+  const onSideMenuClicked = ()=>{
+    sidebarContext.setIsSidebarOpen(true);
+  }
+
   return (
     <div data-aos='fade-down' className='topbarMobile'>
       <div className="topbarMobileBrands">
@@ -44,7 +51,7 @@ const TopbarMobile = () => {
          image={facebook}
         /> */}
         </div>
-        <img src={menuIcon} alt="" className="sideMenuImageMobile" />
+        <img src={menuIcon} alt="" className="sideMenuImageMobile" onClick={onSideMenuClicked}/>
       </div>
     </div>
   )

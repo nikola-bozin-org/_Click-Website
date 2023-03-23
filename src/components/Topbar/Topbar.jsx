@@ -9,9 +9,17 @@ import steelseries from '../../images/brands/steelseries.png'
 import menuIcon from '../../images/other/menu.png'
 import SocialIconLink from '../social-icon-link/SocialIconLink'
 import BrandIconLink from '../brand-icon-link/BrandIconLink'
+import { useContext } from 'react'
+import { SidebarContext } from '../../contexts/sideBarContext'
 
 
 const Topbar = () => {
+
+    const sidebarContext = useContext(SidebarContext);
+
+    const onSideMenuClicked = ()=>{
+      sidebarContext.setIsSidebarOpen(true);
+    }
   return (
     <div data-aos='fade-down' className='topbar'>
         <div className="topbarWrapper">
@@ -46,7 +54,7 @@ const Topbar = () => {
                 />                                                
             </div>
             <div data-aos='fade-down' className="topbarWrapperRight">
-                <img src={menuIcon} alt="" className="sideMenuImage" />
+                <img src={menuIcon} alt="" className="sideMenuImage" onClick={onSideMenuClicked} />
             </div>
         </div>
     </div>

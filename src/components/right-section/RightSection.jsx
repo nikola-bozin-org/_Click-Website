@@ -1,9 +1,9 @@
 import React from 'react'
 import './rightSection.css'
 
-const RightSection = ({image,title,text}) => {
+const RightSection = ({image,title,text,refToUse}) => {
   return (
-    <div data-aos='fade-up' className='rightSection'>
+    <div ref={refToUse} data-aos='fade-up' className='rightSection'>
       <img data-aos-delay='500' data-aos='fade-right' src={image} alt="" className="rightSectionBackgroundImage" />
       <div className="rightSectionBackground">
         <div className="rightSectionBackgroundTexts">

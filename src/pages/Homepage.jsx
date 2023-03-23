@@ -15,16 +15,17 @@ import click3 from '../images/click/click3.png'
 import click4 from '../images/click/click4.png'
 import Locations from '../components/Locations/Locations'
 import SideBar from '../components/side-bar/SideBar'
-import { SidebarContextProvider } from '../contexts/sideBarContext'
+import { SidebarContext } from '../contexts/sideBarContext'
+import { useContext } from 'react'
 
 const Homepage = () => {
 
+  const {cekamoTeRef,dota2Ref,turniriRef,rodjendaniRef} = useContext(SidebarContext)
+
   return (
-    <>
+    <React.Fragment>
       <MainClickImages />
-      {/* <SidebarContextProvider>
         <SideBar/>
-      </SidebarContextProvider> */}
     <div className="homepage">
         <Topbar />
         <TopbarMobile/>
@@ -38,7 +39,9 @@ const Homepage = () => {
                 Otvoreni smo svakog dana od 10:00 do 03:00. 
                 Sve te ceka spremno!
                 Vezuj se, dzojstik u ruke i polecemo!`
-                }/>
+                }
+        refToUse={cekamoTeRef}
+                />
         <LineGradient/>
         <RightSection
         image={click2}
@@ -46,7 +49,8 @@ const Homepage = () => {
         text={`je uzbudljiva nocna akcija gejmera  nepokolebljivog mindset-a!
         Sa timom od 5 igraca, osvoji posebne benefite Click-a, i zauzmite svoju poziciju kao jedan od najboljih timova ove neverovatne igre!
         Nemoj da propustis ultimativno Dota 2 iskustvo!`
-                }/>
+                }
+                refToUse={dota2Ref}/>
         <LineGradient/>
         <LeftSection 
         image={click3}
@@ -54,7 +58,8 @@ const Homepage = () => {
         text={`Podigni svoje gejming iskustvo na profesionalni nivo.
         Upoznaj novo drustvo u Click-u, napravite tim, i zakoracite u svet neprestane borbe za pobedom!
         Pro Room Click-a je spreman da uz mocnu opremu ti omoguci da je tvoja jedina briga da pobedis partiju!`
-                }/>
+                }
+                refToUse={turniriRef}/>
         <LineGradient/>
         <RightSection
         image={click4}
@@ -64,12 +69,13 @@ const Homepage = () => {
         Zapocni svoju rodjendansku zabavu i zakoraci u elitne prostorije Click Esport-a.
         Budi MVP i lider tvog rodjendana i pokazi svima sta znaci biti PRO!
         Nezaboravna secanja i najlepsa druzenja te cekaju!`
-                }/>
+                }
+                refToUse={rodjendaniRef}/>
         <LineGradient/>
         <Locations/>
         <SiteInDevelopment/>
     </div>
-    </>
+    </React.Fragment>
   )
 }
 

@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { useState } from "react";
 import { createContext } from "react";
 
@@ -7,9 +8,22 @@ export const SidebarContextProvider =({children})=>{
 
     const [isSidebarOpen,setIsSidebarOpen] = useState(true);
 
+
+    const cekamoTeRef = useRef(null);
+    const dota2Ref = useRef(null);
+    const turniriRef =useRef(null);
+    const rodjendaniRef = useRef(null);
+    const lokacijeRef = useRef(null);
+
     const value={
         isSidebarOpen,
-        setIsSidebarOpen
+        setIsSidebarOpen,
+        cekamoTeRef,
+        dota2Ref,
+        turniriRef,
+        rodjendaniRef,
+        lokacijeRef,
+
     }
 
     return (
