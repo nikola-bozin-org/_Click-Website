@@ -10,17 +10,31 @@ import steelseries from '../../images/brands/steelseries.png'
 import menuIcon from '../../images/other/menu.png'
 import SocialIconLink from '../social-icon-link/SocialIconLink'
 import { SidebarContext } from '../../contexts/sideBarContext'
-
+import { useState,useEffect } from 'react'
 const TopbarMobile = () => {
   const sidebarContext = useContext(SidebarContext);
+  const [hideCenter, setHideCenter] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 100) {
+        setHideCenter(true);
+      } else {
+        setHideCenter(false);
+      }
+    };
 
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   const onSideMenuClicked = ()=>{
     sidebarContext.setIsSidebarOpen(true);
   }
 
   return (
-    <div data-aos='fade-down' className='topbarMobile'>
-      <div className="topbarMobileBrands">
+    <div data-aos='fade-down' className={`topbarMobile`}>
+      <div className={`topbarMobileBrands${hideCenter?' hideTopbarMobileBrands':''}`}>
         <BrandIconLink
         image={eshark}
         link={`https://eshark.gg/`}
@@ -40,7 +54,7 @@ const TopbarMobile = () => {
         image={steelseries}
         />                                                
       </div>
-      <div className="topbarMobileIcons">
+      <div className={`topbarMobileIcons${hideCenter?' smallMarginTop':''}`}>
         <div className="topbarMobileIconsSocial">
         <SocialIconLink
          link={"https://www.instagram.com/click.e.sport/"}

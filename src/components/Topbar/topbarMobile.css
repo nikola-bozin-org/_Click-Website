@@ -1,24 +1,47 @@
 .topbarMobile {
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 3;
     top: 0;
     display: none;
     color: white;
     text-align: center;
     font-size: 27px;
+    transition: 0.3s ease;
 }
+
+.topbarMobileBrands {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 13px;
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Add opacity transition */
+    max-height: 100px; /* Add this line */
+    opacity: 1; /* Add this line */
+  }
+  .hideTopbarMobileBrands {
+    max-height: 0; /* Add this line */
+    opacity: 0; /* Add this line */
+  }
+
+
 .topbarMobileBrands{
     display: flex;
     align-items: center;
     justify-content:space-evenly;
     gap:13px;
 }
-.topbarMobileIcons{
+.topbarMobileIcons {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: 0.3s ease;
 }
+
+.smallMarginTop{
+    margin-top: 10px;
+}
+
 .topbarMobileIconsSocial{
     display: flex;
     align-items: center;
@@ -36,7 +59,7 @@
 @media (max-width:690px){
     .topbarMobile{
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
     .sideMenuImageMobile{
         width: 23px;
@@ -69,5 +92,10 @@
         width: 16px;
         height: 16px;
         margin-right: 17px;
+    }
+}
+@media (max-width:320px){
+    .sideMenuImageMobile{
+        margin-right: 10px;
     }
 }

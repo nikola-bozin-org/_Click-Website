@@ -1,7 +1,7 @@
 .topbar {
     height: 7vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 3;
     top: 0;
 }
@@ -21,6 +21,10 @@
 }
 
 
+.hideTopbarWrapperCenter {
+    opacity: 0!important;
+    transition: opacity 0.3s ease;
+  }
 .topbarWrapperCenter{
     display: flex;
     align-items: center;

@@ -11,11 +11,25 @@ import SocialIconLink from '../social-icon-link/SocialIconLink'
 import BrandIconLink from '../brand-icon-link/BrandIconLink'
 import { useContext } from 'react'
 import { SidebarContext } from '../../contexts/sideBarContext'
-
+import { useState,useEffect } from 'react'
 
 const Topbar = () => {
-
+    const [hideCenter, setHideCenter] = useState(false);
     const sidebarContext = useContext(SidebarContext);
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY >= 100) {
+          setHideCenter(true);
+        } else {
+          setHideCenter(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
 
     const onSideMenuClicked = ()=>{
       sidebarContext.setIsSidebarOpen(true);
@@ -33,7 +47,7 @@ const Topbar = () => {
                  image={facebook}
                 /> */}
             </div>
-            <div data-aos='fade-down' className="topbarWrapperCenter">
+            <div data-aos='fade-down'  className={`topbarWrapperCenter${hideCenter ? ' hideTopbarWrapperCenter' : ''}`}>
                 <BrandIconLink
                 customClassName={`customBrandIcon`}
                 link={`https://eshark.gg/`}
