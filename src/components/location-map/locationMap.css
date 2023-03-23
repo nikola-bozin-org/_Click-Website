@@ -1,5 +1,5 @@
 .map{
-    width: 100%;
+    width: 70%;
     height: 30%;
     position: absolute;
     bottom: 0;
@@ -24,4 +24,11 @@
 .gmap_iframe{
     width:100%!important;
     height:100%!important;
+}
+
+
+@media (max-width:660px){
+    .map{
+        width: 100%;
+    }
 }

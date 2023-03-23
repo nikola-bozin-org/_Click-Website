@@ -2,6 +2,9 @@
     height: 40px;
     width: 40px;
     transition: 0.1s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .socialIconLink:hover{
     transform: scale(1.1);
@@ -44,5 +47,13 @@
     .socialIcon{
         width: 20px;
         height: 20px;
+    }
+}
+
+@media (max-width:360px){
+    .socialIcon{
+        width: 18px;
+        height: 18px;
+        margin-left: 18px;
     }
 }

@@ -58,3 +58,16 @@
     }
 }
 
+@media (max-width:375px){
+    .sideMenuImageMobile{
+        margin-right: 10px;
+    }
+}
+
+@media (max-width:365px){
+    .sideMenuImageMobile{
+        width: 16px;
+        height: 16px;
+        margin-right: 17px;
+    }
+}

@@ -22,9 +22,9 @@ const Homepage = () => {
   return (
     <>
       <MainClickImages />
-      <SidebarContextProvider>
+      {/* <SidebarContextProvider>
         <SideBar/>
-      </SidebarContextProvider>
+      </SidebarContextProvider> */}
     <div className="homepage">
         <Topbar />
         <TopbarMobile/>
