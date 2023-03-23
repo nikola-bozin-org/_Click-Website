@@ -22,9 +22,9 @@ const SideBar = () => {
     };
 
     return (
-        <div className={`sidebar${sidebarContext.isSidebarOpen?``:`Closed`}`}>
+        <div className={`sidebar${sidebarContext.isSidebarOpen ? "" : " sidebarClosed"}`}>
             <div className="closeSidebarImageWrapper">
-                <img onClick={onCloseSidebarImageClicked} src={closeSidebar} alt="" className={`closeSidebarImage${sidebarContext.isSidebarOpen?'':'Faded'}`} />
+                <img onClick={onCloseSidebarImageClicked} src={closeSidebar} alt="" className={`closeSidebarImage`} />
             </div>
             <div className="sidebarButtons">
                 <p onClick={()=>{scrollToElementTop(cekamoTeRef)}} className="sidebarButton">
@@ -34,7 +34,7 @@ const SideBar = () => {
                     Click Esports Dota 2
                 </p>
                 <p onClick={()=>{scrollToElementTop(turniriRef)}} className="sidebarButton">
-                    Turniri.
+                    Turniri
                 </p>
                 <p onClick={()=>{scrollToElementTop(rodjendaniRef)}} className="sidebarButton">
                     Rodjendani

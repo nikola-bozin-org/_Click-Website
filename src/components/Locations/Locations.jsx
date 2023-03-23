@@ -10,7 +10,7 @@ const Locations = () => {
   const {lokacijeRef} = useContext(SidebarContext);
   return (
     <div ref={lokacijeRef} className='locations'>
-      <p style={{color:'white', width:'100%', textAlign:'center',marginBottom:'30px',fontSize:'40px'}} className="lokacijeText">Lokacije</p>
+      <p style={{color:'white', width:'100%', textAlign:'center',fontSize:'40px'}} className="lokacijeText">Lokacije</p>
       <Location slikaLokacijaIgraonica={click5} grad={'Nis'} ulica={'Obrenoviceva 12'} info={'TC Gorca'} />
     </div>
   )

@@ -73,7 +73,8 @@ const Homepage = () => {
                 refToUse={rodjendaniRef}/>
         <LineGradient/>
         <Locations/>
-        <SiteInDevelopment/>
+        <LineGradient/>
+        {/* <SiteInDevelopment/> */}
     </div>
     </React.Fragment>
   )

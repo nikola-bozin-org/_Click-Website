@@ -8,7 +8,7 @@
 
 .slikaLokacije {
     width: 70%;
-    height: 70%;
+    height: 90%;
     object-fit: cover;
     filter: brightness(90%);
     transition: 0.2s ease;
