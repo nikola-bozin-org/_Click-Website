@@ -6,7 +6,7 @@ export const SidebarContext = createContext({});
 
 export const SidebarContextProvider =({children})=>{
 
-    const [isSidebarOpen,setIsSidebarOpen] = useState(true);
+    const [isSidebarOpen,setIsSidebarOpen] = useState(false);
 
 
     const cekamoTeRef = useRef(null);
