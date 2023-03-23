@@ -15,13 +15,16 @@ import click3 from '../images/click/click3.png'
 import click4 from '../images/click/click4.png'
 import Locations from '../components/Locations/Locations'
 import SideBar from '../components/side-bar/SideBar'
+import { SidebarContextProvider } from '../contexts/sideBarContext'
 
 const Homepage = () => {
 
   return (
     <>
       <MainClickImages />
-      <SideBar/>
+      <SidebarContextProvider>
+        <SideBar/>
+      </SidebarContextProvider>
     <div className="homepage">
         <Topbar />
         <TopbarMobile/>

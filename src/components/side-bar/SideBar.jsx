@@ -1,23 +1,25 @@
 import React from 'react'
 import './sideBar.css'
 import closeSidebar from '../../images/other/cancel.png'
-import { useState } from 'react'
+import { useContext } from 'react'
+import { SidebarContext } from '../../contexts/sideBarContext'
 
 const SideBar = () => {
 
-    const [isSidebarOpen,setIsSidebarOpen] = useState(true);
+    const sidebarContext = useContext(SidebarContext)
+    console.info(sidebarContext);
 
-    const onCloseButtonPressed = () =>{
-        setIsSidebarOpen(false);
+    const onCloseSidebarImageClicked=()=>{
+        sidebarContext.setIsSidebarOpen(false);
     }
 
     const onButtonClick = () => {
         console.info("Hi");
     }
     return (
-        <div className={`sidebar${isSidebarOpen?``:`Closed`}`}>
+        <div className={`sidebar${sidebarContext.isSidebarOpen?``:`Closed`}`}>
             <div className="closeSidebarImageWrapper">
-                <img onClick={onCloseButtonPressed} src={closeSidebar} alt="" className={`closeSidebarImage${isSidebarOpen?'':'Faded'}`} />
+                <img onClick={onCloseSidebarImageClicked} src={closeSidebar} alt="" className={`closeSidebarImage${sidebarContext.isSidebarOpen?'':'Faded'}`} />
             </div>
             <div className="sidebarButtons">
                 <p onClick={onButtonClick} className="sidebarButton">
