@@ -1,0 +1,76 @@
+.sidebar{
+    color: white;
+    top:0;
+    right: 0;
+    position: fixed;
+    z-index: 4;
+    background-color: black;
+    height: 100vh;
+    width: 300px;
+    transition:  0.32s ease-in;
+}
+
+.sidebarClosed{
+    color: white;
+    top:0;
+    right: 0;
+    position: fixed;
+    z-index: 4;
+    background-color: black;
+    height: 100vh;
+    width: 0px;
+    transition:  0.32s ease-out;
+}
+
+.closeSidebarImageWrapper{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.closeSidebarImage{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    margin-top: 9px;
+    opacity: 100%;
+}
+.closeSidebarImageFaded{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    margin-top: 9px;
+    opacity: 0%;
+    transition: 0.1s ease;
+}
+
+.sidebarButtons{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: top;
+    font-size: 25px;
+    margin-top: 50px;
+    gap:20px;
+    text-indent: 20px;
+}
+
+.sidebarButton{
+    height: 70px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor:pointer;
+    z-index: 5;
+    min-width: 300px;
+}
+
+.sidebarButton:hover{
+    color: black;
+    background-color:white;
+    height: 70px;
+    text-indent: 20px;
+    cursor: pointer;
+}

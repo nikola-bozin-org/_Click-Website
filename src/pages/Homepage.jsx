@@ -14,12 +14,14 @@ import click2 from '../images/click/click2.png'
 import click3 from '../images/click/click3.png'
 import click4 from '../images/click/click4.png'
 import Locations from '../components/Locations/Locations'
+import SideBar from '../components/side-bar/SideBar'
 
 const Homepage = () => {
 
   return (
     <>
       <MainClickImages />
+      <SideBar/>
     <div className="homepage">
         <Topbar />
         <TopbarMobile/>
