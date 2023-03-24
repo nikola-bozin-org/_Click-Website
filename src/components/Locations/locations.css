@@ -7,6 +7,7 @@
     background-color: black;
     padding-top:10px;
     padding-bottom: 20px;
+    justify-content: center;
 }
 
 .locationsExamples{
@@ -20,6 +21,12 @@
     flex-wrap: wrap;
     background-color: rgb(27, 27, 27);
 }
+@media (max-width:770px){
+    .locations{
+        padding-bottom: 0px;
+    }
+}
+
 @media (max-width:660px){
     .lokacijeText{
         font-size: 30px !important;

@@ -17,6 +17,7 @@ import Locations from '../components/Locations/Locations'
 import SideBar from '../components/side-bar/SideBar'
 import { SidebarContext } from '../contexts/sideBarContext'
 import { useContext } from 'react'
+import Footer from '../components/footer/Footer'
 
 const Homepage = () => {
 
@@ -73,6 +74,7 @@ const Homepage = () => {
                 refToUse={rodjendaniRef}/>
         <LineGradient/>
         <Locations/>
+        <Footer/>
         <LineGradient/>
         {/* <SiteInDevelopment/> */}
     </div>
