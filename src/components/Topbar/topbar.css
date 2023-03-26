@@ -32,25 +32,6 @@
     gap: 20px;
 }
 
-
-.brandIconLink{
-    margin-left: 10px;
-    height: 40%;
-    object-fit: cover;
-    transition: 0.1s ease-out;
-}
-.brandIconLink:hover{
-    transform: scale(1.1);
-    transition: 0.1s ease-in;
-}
-.brandIcon{
-    height:100%;
-    width: 100%;
-}
-.customBrandIcon{
-    height: 70%;
-}
-
 .topbarWrapperRight{
     display: flex;
     align-items: center;
