@@ -12,7 +12,7 @@ const MainClickImages = () => {
 
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    click1, click2, click3, click4, click5
+    click1, click2, click3, click5
   ]
   const [currentClassName, setCurrentClassName] = useState("defaultMainImage")
 

@@ -58,17 +58,12 @@ const Topbar = () => {
                 image={logitech}
                 />
                 <BrandIconLink
-                customClassName={`customBrandIcon`}
-                link={`https://nzxt.com/`}
-                image={nzxt}
-                />
-                <BrandIconLink
                 link={`https://steelseries.com/`}
                 image={steelseries}
                 />                                                
             </div>
             <div data-aos='fade-down' className="topbarWrapperRight">
-                <img src={menuIcon} alt="" className="sideMenuImage" onClick={onSideMenuClicked} />
+                <img style={{display:'none'}} src={menuIcon} alt="" className="sideMenuImage" onClick={onSideMenuClicked} />
             </div>
         </div>
     </div>

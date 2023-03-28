@@ -21,8 +21,6 @@ function App() {
     <Homepage/>
     </SidebarContextProvider>
     }/>
-    <Route exact path="/test1/test2" element={<Test/>}/>
-    <Route exact path="/404" element={<E404/>}/>
     <Route path="*" element={<E404/>}/>
     </Routes>
   </Router>

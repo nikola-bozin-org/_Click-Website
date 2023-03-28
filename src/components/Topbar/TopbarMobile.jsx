@@ -44,11 +44,7 @@ const TopbarMobile = () => {
         link={`https://www.logitech.com/`}
         image={logitech}
         />
-        <BrandIconLink
-        customClassName={`customBrandIcon`}
-        link={`https://nzxt.com/`}
-        image={nzxt}
-        />
+        
         <BrandIconLink
         link={`https://steelseries.com/`}
         image={steelseries}
@@ -65,7 +61,7 @@ const TopbarMobile = () => {
          image={facebook}
         /> */}
         </div>
-        <img src={menuIcon} alt="" className="sideMenuImageMobile" onClick={onSideMenuClicked}/>
+        <img style={{display:'none'}} src={menuIcon} alt="" className="sideMenuImageMobile" onClick={onSideMenuClicked}/>
       </div>
     </div>
   )
