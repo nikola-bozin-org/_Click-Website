@@ -6,7 +6,7 @@ const Information = () => {
         <div  className='information'>
             <div data-aos='fade-up' className="informationWrapper">
                 <p className="textIntro" >
-                Vrhunski gejming centar za ambiciozne igrace i sampione Esport-a.
+                Vrhunski gejming centar za ambiciozne igrace i sampione <br/> Esport-a.
                <br/> Nase udruzenje nudi raznovrsan izbor igara, neverovatnu gejming atmosveru cineci svaku posetu nezaboravnom.
                 <br/>Zakoraci u Click i razgori svoj gejmerski potencijal!</p>
                 {/* <p className='textSony'>I to nije sve!

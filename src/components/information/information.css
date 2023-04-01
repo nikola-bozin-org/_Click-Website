@@ -5,10 +5,10 @@
     background-color: black;
 }
 .textIntro{
-    width: 90%;
+    width: 100%;
 }
 .informationWrapper{
-    width: 50%;
+    width: 64%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,19 +37,39 @@
 
 @media (max-width:1050px){
     .informationWrapper{
-        font-size: 22px;
+        font-size: 26px;
+        width: 70%;
     }
 }
-
-@media (max-width:770px){
+@media (max-width:1000px){
     .informationWrapper{
         width: 80%;
+    }
+}
+@media (max-width:870px){
+    .informationWrapper{
+        width: 91%;
+    }
+}
+@media (max-width:770px){
+    .informationWrapper{
+        width: 67%;
     }
 }
 
 @media (max-width:510px){
     .informationWrapper{
         font-size: 19px;
-        width: 90%;
+        width: 66%;
     }
 }
+
+@media (max-width:400px){
+    .informationWrapper{
+        width: 80%;
+    }
+}
+@media (max-width:330px){
+    .informationWrapper{
+    width: 60%;
+    }}
