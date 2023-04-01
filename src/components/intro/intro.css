@@ -9,7 +9,7 @@
     top: 0;
     color: white;
     z-index: 2;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 .vaLogo{
     transform: scale(0.7);
@@ -77,9 +77,9 @@
         width: 150px;
         height: 150px;
     }
-    .poweredBy{
+    /* .poweredBy{
         margin-top: 150px;
-    }
+    } */
 }
 @media (max-width:650px){
     .click{
@@ -90,9 +90,9 @@
         width: 70%;
         font-size: 40px;
     }
-    .poweredBy{
+    /* .poweredBy{
         margin-top: 90px;
-    }
+    } */
 }
 @media (max-width:530px){
     .ultimativni{
@@ -102,9 +102,9 @@
         width: 140px;
         height: 140px;
     }
-    .poweredBy{
+    /* .poweredBy{
         margin-top: 105px;
-    }
+    } */
 }
 @media (max-width:460px){
     .click{
@@ -117,9 +117,9 @@
         width: 120px;
         height: 120px;
     }
-    .poweredBy{
+    /* .poweredBy{
         margin-top: 140px;
-    }
+    } */
 }
 @media (max-width:360px){
     .click{
@@ -132,7 +132,7 @@
     .poweredByImage{
         width: 100px;
     }
-    .poweredBy{
+    /* .poweredBy{
         margin-top: 100px;
-    }
+    } */
 }

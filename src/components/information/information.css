@@ -4,7 +4,9 @@
     justify-content: center;
     background-color: black;
 }
-
+.textIntro{
+    width: 90%;
+}
 .informationWrapper{
     width: 50%;
     display: flex;

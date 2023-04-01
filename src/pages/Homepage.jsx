@@ -33,6 +33,8 @@ const Homepage = () => {
         <TopbarMobile/>
         <Intro/>
         <LineGradient/>
+        <Information/>
+        <LineGradient/>
         <LeftSection 
         image={click5}
         title={"Cekamo te"}
@@ -44,6 +46,7 @@ const Homepage = () => {
                 />
         <LineGradient/>
         <Locations/>
+        <LineGradient/>
         <Footer/>
         <LineGradient/>
     </div>
