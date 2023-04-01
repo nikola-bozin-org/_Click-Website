@@ -12,13 +12,13 @@ const Intro = () => {
         </p>
         <img  data-aos-delay="800" data-aos="fade-up" src={clickLogo} alt="" className="clickLogo" />
         <p  data-aos-delay="800" data-aos="fade-up" className="ultimativni">Ultimativni E-Sports Centar!</p>
-        <div data-aos-delay="1100" data-aos="fade-in" className="poweredBy">
+        {/* <div data-aos-delay="1100" data-aos="fade-in" className="poweredBy">
         <p  className="poweredByText">Powered by:</p>
         <div className="powerByImages">
          <img src={nbLogo} alt="" className="poweredByImage" />
          <img src={vaLogo} alt="" className="poweredByImage" /> 
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
