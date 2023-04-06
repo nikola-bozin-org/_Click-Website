@@ -11,7 +11,7 @@ const Locations = () => {
   return (
     <div style={{color:'white'}} ref={lokacijeRef} className='locations'>
       <p data-aos='fade-in' style={{color:'white', width:'100%', textAlign:'center',fontSize:'40px'}} className="lokacijeText">Lokacije</p>
-      <Location slikaLokacijaIgraonica={click5} grad={'Nis'} ulica={'Obrenoviceva 12'} info={'TC Gorca'} />
+      <Location slikaLokacijaIgraonica={click5} grad={'Niš'} ulica={'Obrenovićeva 12'} info={'TC Gorča'} />
       <p data-aos='fade-in' style={{marginTop:'50px',fontSize:'30px'}} className="VidimoSe">Vidimo se!</p>
     </div>
   )

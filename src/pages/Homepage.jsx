@@ -37,10 +37,10 @@ const Homepage = () => {
         <LineGradient/>
         <LeftSection 
         image={click5}
-        title={"Cekamo te"}
-        text={`da ostvaris svoje najbolje gejming trenutke!
+        title={"Čekamo te"}
+        text={`da ostvariš svoje najbolje gejming trenutke!
                 Otvoreni smo svakog dana od 10:00 do 03:00. 
-                Sve te ceka spremno!`
+                Sve te čeka spremno!`
                 }
         refToUse={cekamoTeRef}
                 />
