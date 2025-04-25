@@ -46,9 +46,7 @@ const Homepage = () => {
                 />
         <LineGradient/>
         <Locations/>
-        <LineGradient/>
         <Footer/>
-        <LineGradient/>
     </div>
     </React.Fragment>
   )
