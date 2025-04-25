@@ -2,7 +2,7 @@ import React from 'react'
 import './location.css'
 import LocationMap from '../location-map/LocationMap'
 
-const Location = ({slikaLokacijaIgraonica,grad,ulica,info}) => {
+const Location = ({slikaLokacijaIgraonica,grad,ulica,info,mapId}) => {
   return (
     <div data-aos-offset='300' data-aos='fade-up' className='location'>
         <img src={slikaLokacijaIgraonica} alt="" className="slikaLokacije"/>
@@ -17,7 +17,7 @@ const Location = ({slikaLokacijaIgraonica,grad,ulica,info}) => {
             {info}
           </p>
         </div>
-          <LocationMap mapId={"https://maps.google.com/maps?q=TC%20Gorica%20Nis&t=&z=13&ie=UTF8&iwloc=&output=embed"}/>
+          <LocationMap mapId={mapId}/>
     </div>
   )
 }
