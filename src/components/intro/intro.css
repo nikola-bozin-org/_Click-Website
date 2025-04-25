@@ -11,6 +11,20 @@
     z-index: 2;
     margin-top: 200px;
 }
+
+
+.last{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.last > p {
+    width: 100%;
+}
+
+
 .vaLogo{
     transform: scale(0.7);
 }
