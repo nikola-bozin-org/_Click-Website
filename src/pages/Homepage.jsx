@@ -39,7 +39,7 @@ const Homepage = () => {
         image={click5}
         title={"Čekamo te"}
         text={`da ostvariš svoje najbolje gejming trenutke!
-                Otvoreni smo svakog dana od 10:00 do 03:00. 
+                Otvoreni smo svakog dana od 09:00 do 03:00. 
                 Sve te čeka spremno!`
                 }
         refToUse={cekamoTeRef}
