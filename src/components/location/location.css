@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    min-height: 320px;
 }
 
 .slikaLokacije {
@@ -31,6 +32,7 @@
     justify-content: center;
     align-items: center;
     gap:10px;
+    margin-bottom: 2rem;
 }
 .opisLokacije{
     opacity: 100%;
