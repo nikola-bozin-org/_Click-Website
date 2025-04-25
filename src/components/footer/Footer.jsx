@@ -13,11 +13,6 @@ const Footer = () => {
   return (
     <div data-aos='fade-in' className='footer'>
         <div className="poweredBy">
-        <p  className="poweredByText">Powered by:</p>
-        <div className="powerByImages">
-         <img onClick={(e)=>{navigate(e,"https://www.instagram.com/mar_residence")}} src={vaLogo} alt="" className="poweredByImage vaLogo" /> 
-         <img onClick={(e)=>{navigate(e,"https://www.oxford.rs")}} src={oxford} alt="" className="poweredByImage oxfordLogo" /> 
-        </div>
       </div>
     </div>
   )
